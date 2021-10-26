@@ -14,11 +14,6 @@ export const fetchSeriesAsync = createAsyncThunk('movies/fetchSeriesAsync', asyn
   return response.data;
 });
 
-// export const fetchShowDetailsAsync = createAsyncThunk('movies/fetchShowDetailsAsync', async(id) => {
-//   const response = await movieApi.get(`?apikey=bfca5c2d&i=${id}&Plot=full`);  
-//   return response.data;
-// });
-
 export const fetchAsyncMovieOrShowDetail = createAsyncThunk("movies/fetchAsyncMovieOrShowDetail", async (id) => {
   const response = await movieApi.get(`?apiKey=bfca5c2d&i=${id}&Plot=full`);
   return response.data;

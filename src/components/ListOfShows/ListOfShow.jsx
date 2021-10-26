@@ -8,7 +8,7 @@ export const ListOfShow = ({show}) => {
       show.Response === 'True'
         ? show.Search.map((movie, index) => (
             <ShowCard 
-              key={movie.imdbID, '-', index} 
+              key={index} 
               data={movie}
             />
           ))

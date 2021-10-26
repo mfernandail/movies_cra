@@ -16,7 +16,7 @@ export const Home = () => {
   useEffect(() => {
     dispatch(fetchMoviesAsync(querySearch));
     dispatch(fetchSeriesAsync(querySearch));
-  }, [querySearch]);
+  }, [dispatch, querySearch]);
 
   return (
     <>
