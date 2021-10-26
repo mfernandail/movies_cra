@@ -72,18 +72,16 @@
   
   .show-section__right img {
     margin-bottom: 40px;
-    /* margin-left: 0; */
     width: 90%;
   }
 
   .movie-section__icon {
-    width: 30px;
+    width: 25px;
   }
 
   .show-section__right {
     order: 1;
   }
-
   
   .show-section__left {
     order: 2;
